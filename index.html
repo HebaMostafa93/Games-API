@@ -1,0 +1,99 @@
+<html>
+
+<head>
+  <title>GAME REVIEWS</title>
+
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!---------------- Favicon------------ -->
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <!---------------- Website Fonts ------------ -->
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Comfortaa&family=Nerko+One&display=swap" rel="stylesheet">
+  <!-- ------------ Font Awsome Library Icon ----------- -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- ------------- Bootstrap ------------- -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- ------------- Main Style Sheet ------------- -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+<section id="main-section" class="d-block">
+
+  <div class="header-img">
+    <img src="images/wraper.png" class="w-100" alt="wallpaper">
+  </div>
+  
+  <nav class="navbar navbar-expand-lg w-75">
+    <div class="container-fluid">
+      <img src="images/logo-sm.png" alt="logo">
+      <a class="navbar-brand text-white ps-2" href="#">GAME REVIEWS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" data-category="mmorpg">mmorpg</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="shooter">shooter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="sailing">sailing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="permadeath">permadeath</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="superhero">superhero</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="pixel">pixel</a>
+          </li>
+        </ul>
+  
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row py-5 gx-3" id="itemData"></div>
+  </div>
+</section>
+
+<section id="details" class="d-none">
+  <div class="container">
+      <div class="item-detailes text-white py-5 position-relative">
+        <h3 class="mb-4">Details Game</span></h3>
+        <i class="fa-solid fa-xmark fa-2x position-absolute top-0 end-0 mt-5" id="closeBtn"></i>
+        <div class="row" id="gameDetails">
+          <div class="col-md-4">
+            <img src="" class="w-100" alt="game poster" id="gamePoster">
+          </div>
+          <div class="col-md-8">
+            <h2 id="title"></h2>
+            <p class="fw-bold">Category: <span id="category"></span> </p> 
+            <p class="fw-bold">Platform: <span id="platform"></span> </p> 
+            <p class="fw-bold">Status: <span id="status"></span> </p> 
+            <p id="game-desc"></p>
+  
+            <button class="btn btn-show">Show Game</button>
+  
+          </div>
+        </div>
+      </div>
+</section>
+<!-- -----Loading------- -->
+  <section id="loading" class="d-none">
+    <span class="loader"></span>
+  </section>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script type="module" src="js/index.js"></script>
+</body>
+
+</html>

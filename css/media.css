@@ -1,0 +1,10 @@
+@media screen and (max-width: 979px) and (min-width: 768px) {
+    .navbar{
+        width: 50% !important;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 500px) {
+	.navbar{
+        width: 100% !important;
+    }
+}
